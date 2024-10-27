@@ -71,19 +71,44 @@ body{
     border: 1px solid #000000;
     padding: 1.5em;
     background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
 }
 
 #container .imagen_blog{
     width: 100%;
     height: auto;
-    margin-bottom: 1.5em;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 #container .date_blog{
 display: flex;
+
 flex-direction: column;
-row-gap:0.75 ;
+row-gap:0.75em;
 }
 #container .date_blog .category_label_blog{
+font-weight: 800;
+display: block;
+width: 82px;
+text-align: center;
+padding: 0.40em 0.75em;
+background-color: #F4D04E;
+border-radius: 0.25em;
+}
 
+#container .content_blog{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75em;
+}
+
+
+
+#container .avatar_blog{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.75em;
+    align-items: center;
 }
