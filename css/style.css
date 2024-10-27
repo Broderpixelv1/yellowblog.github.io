@@ -7,7 +7,7 @@
 @font-face {
     font-family: "figtree";
     src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
-    font-weight: 100;
+    font-weight: 500;
     font-style: normal;
 }
 @font-face {
@@ -46,20 +46,23 @@ body{
 .text_preset1{
     font-size: 1.5em;
     font-weight: 900;
+    color: #111111;
 }
 .text_preset2{
     font-size: 1em;
     font-style: normal;
-
+    color: #6B6B6B;
 }
 
 .text_preset3{
     font-size: 0.87em ;
-    font-weight: 600;
+    font-weight: 500;
+    color: #111111;
 }
 .text_preset3_bold{
     font-size: 0.87em ;
     font-weight: 700;
+    color: #111111;
 }
 
 /*style*/
@@ -71,16 +74,17 @@ body{
     border: 1px solid #000000;
     padding: 1.5em;
     background-color: white;
+    box-shadow: #111111 0.5em 0.5em;
 
     display: flex;
     flex-direction: column;
     row-gap: 1.5em;
 }
 
-#container .imagen_blog{
+#container .imagen_blog img{
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 #container .date_blog{
 display: flex;
@@ -99,6 +103,7 @@ border-radius: 0.25em;
 }
 
 #container .content_blog{
+    line-height:1.5em;
     display: flex;
     flex-direction: column;
     row-gap: 0.75em;
