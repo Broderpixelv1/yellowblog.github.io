@@ -1,3 +1,4 @@
+/*added diferents style of fonts*/
 @font-face {
     font-family: "figtree";
     src: url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf") ;
@@ -23,6 +24,7 @@
     font-weight: 900;
 }
 
+/*reset basic styles of page*/
 
 *{
     margin: 0px;
@@ -34,6 +36,11 @@ html, body{
     height: 100%;
 }
 
+/*
+we add color and center the objects using flexbox.
+agregamos color y centramos los objetos usando flexbox.
+*/
+
 body{
     background-color:#F4D04E;
     display: flex;
@@ -42,7 +49,13 @@ body{
     font-family: "figtree";
 }
 
+
 /*text*/
+/*consider it appropriate to create default 
+styles for fonts, which can be applied to html classes.
+considera apropiado crear estilos predeterminados para 
+las fuentes tipograficas, que se pueden aplicar a en las class en html. 
+*/
 .text_preset1{
     font-size: 1.5em;
     font-weight: 900;
@@ -65,7 +78,7 @@ body{
     color: #111111;
 }
 
-/*style*/
+/*style card*/
 
 #container{
     width: 384px;
@@ -75,8 +88,19 @@ body{
     padding: 1.5em;
     background-color: white;
     box-shadow: #111111 0.5em 0.5em;
+    /*animacion y efecto para la accion hover.
+    animation and effect for the hover action.*/
     transition: all 0.3s ease-in-out 0s;
-
+    
+    /*flexbo 
+    We organize all the elements of the motherboard 
+    in columns and size the margins of the objects 
+    with row-gap so as not to repeat margin-bottom 
+    in different elements.
+    todo los elementos de la tarjeta madre lo organizamos 
+    en columnas y damos tamaño a los margenes de los objetos 
+    con row-gap para no repetir margin-botton en diferentes elementos.
+    */
     display: flex;
     flex-direction: column;
     row-gap: 1.5em;
@@ -86,9 +110,10 @@ body{
     box-shadow: #111111 1em 1em;
 }
 
-.content_blog h1{
+#container .content_blog h1{
    transition: all 0.3s ease-in-out 0s;
 }
+
 #container:hover > .content_blog h1{
     color: #F4D04E;
 }
@@ -100,10 +125,11 @@ body{
 }
 #container .date_blog{
 display: flex;
-
+/*We repeat theory, alignment and margin with flexbox*/
 flex-direction: column;
 row-gap:0.75em;
 }
+
 #container .date_blog .category_label_blog{
 font-weight: 800;
 display: block;
@@ -116,6 +142,7 @@ border-radius: 0.25em;
 
 #container .content_blog{
     line-height:1.5em;
+    
     display: flex;
     flex-direction: column;
     row-gap: 0.75em;
